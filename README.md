@@ -6,6 +6,20 @@ Overview of Project:
   
 Results:
 
+  After running both the original code and the refactored code, I was greatly surprised to see the refactored code ran about four times as fast as the original code, even though there were more lines of code. I would have thought that because the refactored code I wrote was written sloppily, as I had to troubleshoot at several points, it would run much slower, but it instead seemed much more streamlined. For example, after a lot of Googling, I decided to use ReDim,as shown below, in an attempt to debug an issue, which worked, but it seemed not very efficient in terms of memory, so I would have thought it would slow the process, making it longer than the original. 
+  
+    Dim tickerVolumes() As Long
+    
+    ReDim tickerVolumes(RowCount)
+    
+    Dim tickerStartingPrices() As Single
+    
+    ReDim tickerStartingPrices(RowCount)
+    
+    Dim tickerEndingPrices() As Single
+    
+    ReDim tickerEndingPrices(RowCount)
+
 
 Summary:
 
